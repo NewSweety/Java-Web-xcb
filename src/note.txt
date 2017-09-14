@@ -1,0 +1,48 @@
+,项目实战
+  新闻发布系统
+ （1）需求分析
+        前台：
+        a,导航条
+        b,文章的列表
+        c,文章的详情（文章的标题，发布时间，正文，所属的分类）
+        d,首页（比较重要的文章分类的N条信息 ，更多banner，版权问题）
+        e,搜索
+        后台：
+        a,分裂管理
+        b,文章管理
+        c,用户管理
+        d,开发语言：java ，PHP等
+        e,数据库：mysql
+        web服务器：Tomcat
+ （2）编码
+        a,建立工程 jio
+        b,设计数据库jiodbs
+        -----------------
+        -nav分类信息表
+        -----------------
+            create table nav(
+             nav_id varchar(36) primary key comment '分类的主键UUID',
+             nav_name varchar(50) not null comment '分类的名称',
+             nav_feight int default 999 comment '排序的权重，越大越往后'
+           )default charset=utf8;
+        ---------------------
+          -article:文章信息表
+        ---------------------
+            create table article(
+            article_id varchar(36) primary key comment'文章的主键',
+            article_title varchar(100) comment'标题',
+            article_content longtext comment'内容',
+            article_data varchar(20) not null comment'发布时间',
+            nav_id varchar(36) not null comment'文章的类别id号'
+            )default charset=utf8;
+            --------------------
+            -manager:管理信息表
+           --------------------
+             create table manager(
+             manager_id varchar(10) primary key comment'管理人id',
+             manager_name varchar(20) not null comment'管理人的name',
+             manager_pwd varchar(50) not null comment'登录密码'
+        )default charset=utf8;
+        
+ （3）系统的测试
+ （4）系统的发布

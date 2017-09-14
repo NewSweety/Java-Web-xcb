@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>mlb</display-name>
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>com.user.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>insertmanager</servlet-name>
+    <servlet-class>com.servlet.insertmanager</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditManager</servlet-name>
+    <servlet-class>com.servlet.EditManager</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteManager</servlet-name>
+    <servlet-class>com.servlet.DeleteManager</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertNav</servlet-name>
+    <servlet-class>com.servlet.InsertNav</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditNav</servlet-name>
+    <servlet-class>com.servlet.EditNav</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteNav</servlet-name>
+    <servlet-class>com.servlet.DeleteNav</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertArticle</servlet-name>
+    <servlet-class>com.servlet.InsertArticle</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditArticle</servlet-name>
+    <servlet-class>com.servlet.EditArticle</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteNews</servlet-name>
+    <servlet-class>com.servlet.DeleteNews</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>indexServlet</servlet-name>
+    <servlet-class>com.servlet.indexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ArticleListServlet</servlet-name>
+    <servlet-class>com.servlet.ArticleListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>itemServlet</servlet-name>
+    <servlet-class>com.servlet.itemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>itemServlet1</servlet-name>
+    <servlet-class>com.servlet.itemServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertmanager</servlet-name>
+    <url-pattern>/admin/insertmanager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditManager</servlet-name>
+    <url-pattern>/admin/editManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteManager</servlet-name>
+    <url-pattern>/admin/DeleteManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertNav</servlet-name>
+    <url-pattern>/admin/insertNav</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditNav</servlet-name>
+    <url-pattern>/admin/editNav</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteNav</servlet-name>
+    <url-pattern>/admin/deleteNav</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertArticle</servlet-name>
+    <url-pattern>/admin/insertArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditArticle</servlet-name>
+    <url-pattern>/admin/editArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteNews</servlet-name>
+    <url-pattern>/admin/deleteNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>indexServlet</servlet-name>
+    <url-pattern>/index.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ArticleListServlet</servlet-name>
+    <url-pattern>/articleList.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/search.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>itemServlet</servlet-name>
+    <url-pattern>/itemhtml</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>itemServlet1</servlet-name>
+    <url-pattern>/item.html</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

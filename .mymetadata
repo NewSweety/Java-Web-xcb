@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="xcb2"
+  id="myeclipse.1467207875982"
+  context-root="/xcb2"
+  j2ee-spec="1.4"
+  archive="xcb2.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
